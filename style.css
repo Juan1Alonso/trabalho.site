@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header{
+width: 100%;
+height: 100vh;
+background-image: url(downloadd.jpg);
+background-position: center;
+background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+header .menu{
+position: fixed;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: rgb(255, 255, 255);
+    padding: 8px 40px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo, header .menu a:hover{
+    color: rgb(255, 255, 255);   
+}
+
+.principal{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.principal h2{
+color: rgb(0, 0, 0);
+font-size: 35px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-shadow: 2px 2px white, -2px -2px white;
+}
+.principal h1{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px rgb(255, 255, 255), -2px -2px white
+}
+
+.principal .links a{
+    color: rgb(0, 0, 0);
+    padding: 10px 18px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
+}
+ 
+.principal .links a:hover{
+    color: black;
+    background-color: lavender;
+}
+.background{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoedas</title>
+    <link rel="icon" href="logo-bitcoin-2048.png">
+    <style>
+ *{
+        margin: 0;
+        padding: 0;
+    }
+    .links{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        display: flex;
+    }
+    .links label{
+        padding: 10px 0;
+        flex-grow: 1;
+        cursor: pointer;
+        transition: all .4s;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color:white;
+    }
+    .links label:hover{
+        background-color: black;
+    }
+   .scroll input{
+       display: none;
+   }
+    .bloco{
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex
+    }
+    #valorização{
+        background-image: url(inv.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    #contato{
+        background-image: url(tel.png);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .scroll{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .sections{
+        transition: all .4s;
+    }
+    #rd_contato:checked ~ .sections{
+        margin-top: -100vh;
+    }
+    #textofinal{
+        justify-content: center;
+            text-align: justify;
+            background-color: rgba(17, 16, 16, 0.753);
+            margin-top: 0%;
+            font-size: 33px;
+            color: white;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 1%;
+        
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="links">
+        <label for="rd_valorização">Valorização</label>
+        <label for="rd_contato">Contato</label>
+    </nav>
+<div class="scroll">
+    <input type="radio" name="grupo" id="rd_valorização" checked="true">
+    <input type="radio" name="grupo" id="rd_contato">
+
+    <section class="sections">
+    <section class="bloco" id="valorização">
+    <div>
+    <h1 id="textofinal">Criptomoeda AXS se valorizou mais de 28.000% neste ano; mesmo analista que indicou moeda vê nova oportunidade para fazer fortuna com cripto; saiba mais. Após cinco meses de queda, o bitcoin (BTC) recuperou os níveis de meados de 11 de maio e alcançou US$ 58 mil na última semana O mercado de criptomoedas segue em campo negativo, mas mantendo oscilações de baixa intensidade. Às 11h30, o bitcoin (BTC) registrava queda de 1,98%, a US$ 46.961, e o ethereum (ETH) recuava 3,45%, negociado a US$ 3.772 por isso uma grande alta nos investimentos em criptomoedas, NFT e Metaverso por isso vale muita apena investir a alta vai ser grandes dessas tecnologias.
+    </h1>
+    </div>
+    </section>
+    <section class="bloco" id="contato">
+        <div>
+        <h1 id="textofinal">
+        <address>
+            Envie um e-mail para <a href="mailto:juanalonsosite">Juan Alonso</a><br>
+            Telefone: <a href="tel:+55991590894">(11) 99159-0894</a><br>
+        </address>
+
+        </h1>
+        </div>
+    </section>
+    
+
+</section>
+</div>    
+</body>
+</html>

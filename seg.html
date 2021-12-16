@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Criptomoedas</title>
+    <link rel="icon" href="logo-bitcoin-2048.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .links {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            display: flex;
+        }
+
+        .links label {
+            padding: 10px 0;
+            flex-grow: 1;
+            cursor: pointer;
+            transition: all .4s;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 100%;
+            color: white;
+        }
+
+        .links label:hover {
+            background-color: black;
+        }
+
+        .scroll input {
+            display: none;
+        }
+
+        .bloco {
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #criptomoedas {
+            background-image: url(cripto.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #bitcoin {
+            background-image: url(bitt.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #ethereum {
+            background-image: url(ether-1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #investimento {
+            background-image: url(gg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #lucro {
+            background-image: url(inv.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .scroll {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sections {
+            transition: all .4s;
+        }
+
+        #rd_bitcoin:checked~.sections {
+            margin-top: -100vh;
+        }
+
+        #rd_ethereum:checked~.sections {
+            margin-top: -200vh;
+        }
+
+        #rd_investimento:checked~.sections {
+            margin-top: -300vh;
+        }
+
+        #rd_lucro:checked~.sections {
+            margin-top: -400vh;
+        }
+
+        #textocripto {
+            justify-content: center;
+            text-align: justify;
+            background-color: rgba(17, 16, 16, 0.849);
+            margin-top: 0%;
+            font-size: 33px;
+            color: white;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="links">
+            <label for="rd_criptomoedas">Criptomoedas</label>
+            <label for="rd_bitcoin">Bitcoin</label>
+            <label for="rd_ethereum">Ethereum</label>
+            <label for="rd_investimento">Investimento</label>
+            <label for="rd_lucro">Lucro</label>
+        </nav>
+    </header>
+    <main>
+
+        <div class="scroll">
+            <input type="radio" name="grupo" id="rd_criptomoedas" checked="true">
+            <input type="radio" name="grupo" id="rd_bitcoin">
+            <input type="radio" name="grupo" id="rd_ethereum">
+            <input type="radio" name="grupo" id="rd_investimento">
+            <input type="radio" name="grupo" id="rd_lucro">
+
+            <section class="sections">
+                <section class="bloco" id="criptomoedas">
+                    <div>
+                        <h1 id="textocripto">As criptomoedas nada mais são do que moedas virtuais, utilizadas para a realização de pagamentos
+                            em transações comerciais. Ou seja, possuem a mesma função de comprar mercadorias e serviços que
+                            as moedas já conhecidas por nós, como o Real e o Dólar.
+                            <br>
+                            <br>
+                            Mas qual a diferença das criptomoedas para as moedas regulares? Além do fato de serem completamente
+                            virtuais, existem três características básicas que diferenciam as criptomoedas das moedas regulares:
+                            a descentralização, o anonimato e custo zero de transação.
+                            <br>
+                            <br> A descentralização significa essencialmente que essas moedas independem de um banco central ou
+                            do Estado para a sua regulamentação, isto é, suas oscilações de preço ocorrem de acordo com a
+                            própria economia por trás da moeda, possuindo menor interferência do Estado do que uma moeda
+                            regular teria.</h1>
+                    </div>
+                </section>
+                <section class="bloco" id="bitcoin">
+                    <div>
+                        <h1 id="textocripto">Bitcoin é uma moeda descentralizada, sendo um dinheiro eletrônico para transações ponto a ponto.
+                            O bitcoin foi a primeira moeda virtual do mundo todo, apesar de elas serem reais, não há versão física dele a tecnologia
+                            que foi criada para ele permite que seja emitidos até 21 milhões de bitcoins hoje não é possível comprar nenhum tipo de carro etc...
+                            com bitcoin, e preciso trocar a criptomoeda pela moeda local.<br>
+                            <br>
+                            <br>
+                            A validação" dada ao bitcoin por Musk pode significar a superação dessa barreira do mercado de criptomoedas, e por isso está gerando grande valorização no bitcoin.
+                            </h1>
+                    </div>
+                </section>
+                <section class="bloco" id="ethereum">
+                    <div>
+                        <h1 id="textocripto">Ethereum é uma plataforma descentralizada capaz de executar contratos inteligentes e
+                            aplicações descentralizadas usando a tecnologia de blockchain:
+                            <br>
+                            <br>
+                            São aplicações que funcionam exatamente sem qualquer censura, fraude ou interferência de terceiros isso
+                            é porque o contrato é imutável.
+                            <br>
+                            <br>
+                            O ethereum é uma das maiores plataformas de investimento só está atrás a
+                            plataforma bitcoin que é a maior criptomoeda do mundo, a máxima valorização do ethereum
+                            foi de R$ 26.552,83 a tendência do ethereum para 2022 é subir cada vez mais por isso muitos investidores
+                            estão aplicando bastante nele.</h1>
+                    </div>
+                </section>
+                <section class="bloco" id="investimento">
+                    <div>
+                        <h1 id="textocripto">As criptomoedas são ativos com um enorme potencial de crescimento, mas até que alcancem maior maturidade seguirão incrivelmente especulativos e voláteis. Elas são uma forma descentralizada de dinheiro digital que elimina a necessidade de intermediários tradicionais, como bancos e governos, para transações financeiras.</h1>
+                        
+                    </div>
+                </section>
+                <section class="bloco" id="lucro">
+                    <div>
+                        <h1 id="textocripto">E qual é o lucro das criptomoedas ? O lucro delas são muito alto hoje dia  15/12/2021, um bitcoin
+                             está valendo, R$ 277.291,56 e o ethereum R$ 22.023,07 você tem um lucro enorme em cima dessas criptomoedas, e a tend
+                             ia delas é subir ainda mais junto com a plataforma de NFT e o Metaverso,
+                             então vai ter uma alta enorme nesses 
+                             mercados, e muita gente investindo nele NFT, Metaverso e Criptomoedas vão crescer cada vez mais, seus lucros vão 
+                             crescer e moedas virtuais, daqui um tempo você não vai precisar converter para moeda local  e sim comprar com a 
+                             própria criptomoeda então se você pode investir pode investir sem medo que a probabilidade de você tirar o triplo ou 
+                             até mais, de dinheiro e muito alta o bitcoin é a maior certeza de todas, as outras provavelmente vão crescer também 
+                             mais o bitcoin é mais garantido.</h1>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
